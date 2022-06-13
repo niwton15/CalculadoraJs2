@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Windows</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACr/AA6/8AD/ewAAHrA2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzMwIiIiIDMzMzAiIiIgMzMzMCIiIiAzMzMwIiIiIDMzMzAiIiIgMzMzMCIiIiAzMzMwIiIiIAAAAAAAAAAAEREREEREREAREREQREREQBERERBERERAEREREEREREAREREQREREQBERERBERERAEREREEREREAREREQRERESAgAAAgIAAAICAAACAgAAAgIAAAICAAACAgAAA//8AAICAAACAgAAAgIAAAICAAACAgAAAgIAAAICAAACAgAAA" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <div id="calculadora">
+        <p id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="botao1" onclick="calcular()">CE</button></td>
+                <td><button class="botao1" onclick="limpar()">C</button></td>
+                <td><button class="botao1" ><</button></td>
+                <td><button class="botao1" onclick="calcular('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calcular('7')">7</button></td>
+                <td><button class="botao" onclick="calcular('8')">8</button></td>
+                <td><button class="botao" onclick="calcular('9')">9</button></td>
+                <td><button class="botao1" onclick="calcular('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calcular('4')">4</button></td>
+                <td><button class="botao" onclick="calcular('5')">5</button></td>
+                <td><button class="botao" onclick="calcular('6')">6</button></td>
+                <td><button class="botao1" onclick="calcular('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calcular('1')">1</button></td>
+                <td><button class="botao" onclick="calcular('2')">2</button></td>
+                <td><button class="botao" onclick="calcular('3')">3</button></td>
+                <td><button class="botao1" onclick="calcular('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="botao" style="width: 123px;" onclick="calcular('0')">0</button></td>
+                <td><button class="botao1" onclick="calcular(',')">,</button></td>
+                <td><button class="botao1" onclick="executar()">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
